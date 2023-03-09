@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- experminnt -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+  <link rel="stylesheet" href="./css/weather.css" />
+  <title>Weather app</title>
+</head>
+</head>
+
+<body>
+  <div class="container">
+    <form action="#">
+      <label for="city_input"><input type="text" name="city_input" id="city_input" autocomplete="off" /></label>
+      <label for="submit">
+        <button type="submit" id="submit" name="submitBtn">submit</button>
+      </label>
+    </form>
+    
+    
+    <div class="state">
+      Loading...
+      Loading...
+    </div>
+    
+    <div class="card">
+      <div class="background">
+        <img id="weather_img" src="http://openweathermap.org/img/wn/10d@4x.png" alt=""/>
+      </div>
+      <div class="weatherInfo">
+        <div id="temp"><span id="deg">--</span><span>&deg;</span></div>
+        <div class="description">
+          <div id="status">-------</div>
+          <div id="city">
+            ---------
+          </div>
+        </div>
+        <div id="date">7st Mar</div>
+      </div>
+    </div>
+  </div>
+  <script src="./weather.js" type="module"></script>
+</body>
+
+</html>
